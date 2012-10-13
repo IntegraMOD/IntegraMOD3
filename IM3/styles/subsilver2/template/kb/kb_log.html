@@ -1,0 +1,34 @@
+<!-- INCLUDE overall_header.html -->
+
+<h2>{L_LOG_TITEL}</h2>
+<p>{L_LOG_DESCRIPTION}</p>
+<!-- IF PAGINATION -->
+<b>{PAGE_NUMBER} <span>{PAGINATION}</span></b>
+<!-- ENDIF -->
+<a href="{U_ARTICLE}">{L_BACK_ARTICLE}</a>
+<form method="post" action="{U_ACTION}">
+<!-- BEGIN log -->
+<!-- IF log.S_ROW_COUNT is even --><div class="row1"><!-- ELSE --><div class="row2"><!-- ENDIF -->
+	<!-- IF S_DELETE_LOG --><input type="checkbox" class="radio" name="mark[]" value="{log.ID}" /><!-- ENDIF -->
+	{L_CHANGED_AT} : {log.CHANGE_TIME} {L_FROM} {log.USER} {log.CHANGE_REASON}
+</div>
+<!-- END log -->
+<!-- IF S_DELETE_LOG -->
+<table class="tablebg" cellspacing="1" width="100%">
+<tr>
+	<td class="cat" colspan="2" align="center">
+		<input class="btnlite" type="submit" name="delall" value="{L_DELETE_ALL}" />&nbsp;
+		<input class="btnlite" type="submit" name="delmarked" value="{L_DELETE_MARKED}" /><br />
+	</td>
+</tr>
+</table>
+<!-- ENDIF -->
+</form>
+<br />
+<table class="tablebg" cellspacing="1" width="100%">
+<tr>
+ <td align="center" class="row1" style="padding:5px 5px 5px 5px;"><b><a href="{U_KB}">{L_KB_BACK}</a></b></td>
+</tr>
+</table>
+<br />
+<!-- INCLUDE overall_footer.html -->

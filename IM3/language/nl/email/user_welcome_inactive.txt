@@ -1,0 +1,26 @@
+Subject: Welkom op "{SITENAME}"
+
+{WELCOME_MSG}
+
+Bewaar deze e-mail goed.
+Je account is aangemaakt met de volgende gegevens:
+
+----------------------------
+Gebruikersnaam: {USERNAME}
+Wachtwoord:     {PASSWORD}
+
+Site URL: {U_BOARD}
+----------------------------
+
+Je account is nog NIET actief.
+Je kunt de account activeren door op onderstaande link te klikken:
+
+{U_ACTIVATE}
+
+Vergeet je wachtwoord zeker niet!
+Het wachtwoord is gecodeerd opgeslagen en kan dus nooit meer worden opgehaald.
+Mocht je het wachtwoord toch vergeten dan kun je eventueel een nieuwe aanvragen via een link in het loginscherm.
+
+Bedankt voor je registratie.
+
+{EMAIL_SIG}

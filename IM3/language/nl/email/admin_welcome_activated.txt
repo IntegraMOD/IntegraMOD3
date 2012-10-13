@@ -1,0 +1,10 @@
+Subject: Account geactiveerd
+
+Hallo {USERNAME},
+
+Je account op "{SITENAME}" is nu geactiveerd,
+je kunt nu inloggen door de gebruikersnaam en het wachtwoord te gebruiken die je in een vorige e-mail hebt ontvangen.
+
+Je wachtwoord is beveiligd opgeslagen in onze databse en kan niet worden teruggehaald. Voor het geval dat je het vergeet, kun je het resetten door gebruik te maken van het adres geassocieerd met je account.
+
+{EMAIL_SIG}

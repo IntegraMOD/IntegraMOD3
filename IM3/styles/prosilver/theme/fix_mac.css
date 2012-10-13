@@ -1,0 +1,7 @@
+.showhide {
+	position:relative; 
+	float: right; margin-top: -14px; margin-right: 1px;
+}
+.showhide img { max-width:16px; max-height:16px; }
+
+.show_in_ie { display:block; }

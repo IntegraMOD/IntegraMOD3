@@ -1,0 +1,53 @@
+<!-- IF S_GP_HIGHSLIDE -->
+	<script type="text/javascript" src="{ROOT_PATH}styles/js/highslide/highslide-full.js"></script>
+	<link rel="stylesheet" type="text/css" href="{ROOT_PATH}styles/js/highslide/highslide.css" />
+	<script type="text/javascript">
+		hs.graphicsDir = '{ROOT_PATH}styles/js/highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.fadeInOut = true;
+		hs.dimmingOpacity = 0.8;
+		hs.outlineType = 'rounded-white';
+		hs.captionEval = 'this.thumb.title';
+		// This value needs to be set to false, to solve the issue with the highly increasing view counts.
+		hs.continuePreloading = false;
+
+		// Add the slideshow providing the controlbar and the thumbstrip
+		hs.addSlideshow({
+			interval: 5000,
+			repeat: false,
+			useControls: true,
+			fixedControls: 'fit',
+			overlayOptions: {
+				opacity: .75,
+				position: 'top center',
+				hideOnMouseOut: true
+			}
+		});
+	</script>
+<!-- ENDIF -->
+<!-- IF S_GP_LYTEBOX -->
+	<script type="text/javascript" src="{ROOT_PATH}styles/js/lytebox/lytebox.js"></script>
+	<link rel="stylesheet" type="text/css" href="{ROOT_PATH}styles/js/lytebox/lytebox.css" />
+	<script type="text/javascript" >
+		if (window.addEventListener) {
+			window.addEventListener("load",initLytebox,false);
+		} else if (window.attachEvent) {
+			window.attachEvent("onload",initLytebox);
+		} else {
+			window.onload = function() {initLytebox();}
+		}
+		function initLytebox() {
+			var imgMaxWidth = 1280;
+			var imgWarning = '';
+			myLytebox = new LyteBox(imgMaxWidth, imgWarning);
+		}
+	</script>
+<!-- ENDIF -->
+<!-- IF S_GP_SHADOWBOX -->
+	<script type="text/javascript" src="{ROOT_PATH}styles/js/shadowbox/shadowbox.js"></script>
+	<link rel="stylesheet" type="text/css" href="{ROOT_PATH}styles/js/shadowbox/shadowbox.css">
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
+<!-- ENDIF -->

@@ -1,0 +1,11 @@
+INTEGRAMOD_3
+PHP Version: 5.2.10
+DBMS: MySQL(i) 5.0.81-community
+phpBB3 Version: 3.0.6-RC2
+
+Adding acp module: acp/info/acp_KB.php
+Fail
+
+Adding acp module: acp/info/acp_PHP_GALLERY.php
+Fail
+

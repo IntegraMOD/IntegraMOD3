@@ -1,0 +1,227 @@
+.icon_r {
+    background-image: url("{T_IMAGESET_PATH}/icon_rt.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_s {
+    font-size: 1.1em;
+    font-weight: bold;  
+    color: #D2A900;
+    background-image: url("{T_IMAGESET_PATH}/icon_span.gif");
+    background-repeat: repeat-x;
+    background-color:transparent;
+    height: 25px;
+    padding: 3px 0px 2px 0px;
+}
+
+.icon_s:hover {
+    color: #DD6900;
+    text-decoration:none;
+}
+
+.icon_profile {
+    background-image: url("{T_IMAGESET_PATH}/icon_user_profile.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_aim {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_aim.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_email {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_email.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_icq {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_icq.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_jabber {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_jabber.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_msnm {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_msnm.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_pm {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_pm.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_www {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_www.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_yim {
+    background-image: url("{T_IMAGESET_PATH}/icon_contact_yim.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_mcp {
+    background-image: url("{T_IMAGESET_PATH}/icon_mcp.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_edit {
+    background-image: url("{T_IMAGESET_PATH}/icon_post_edit.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_fwd {
+    background-image: url("{T_IMAGESET_PATH}/icon_post_fwd.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_print {
+    background-image: url("{T_IMAGESET_PATH}/icon_post_print.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_quote {
+    background-image: url("{T_IMAGESET_PATH}/icon_post_quote.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_reply {
+    background-image: url("{T_IMAGESET_PATH}/icon_post_reply.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_offline {
+    background-image: url("{T_IMAGESET_PATH}/icon_user_offline.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_online {
+    background-image: url("{T_IMAGESET_PATH}/icon_user_online.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_search {
+    background-image: url("{T_IMAGESET_PATH}/icon_user_search.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_information {
+    background-image: url("{T_IMAGESET_PATH}/icon_info.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_delete {
+    background-image: url("{T_IMAGESET_PATH}/icon_delete.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_new {
+    background-image: url("{T_IMAGESET_PATH}/icon_new.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.icon_pgallery {
+    background-image: url("{T_IMAGESET_PATH}/icon_pgallery.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 4px 0px 3px 0px;
+}
+
+.bbuttonl {
+    background-image: url("{T_IMAGESET_PATH}/button_lt.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 6px 0px 7px 0px;
+}
+
+.bbutton {
+    font-size: 1.2em;
+    font-weight: bold;  
+    color: #D2A900;
+    background-image: url("{T_IMAGESET_PATH}/button_span.gif");
+    background-repeat: repeat-x;
+    background-color:transparent;
+    height: 25px;
+    padding: 4px 0px 7px 0px;
+}
+
+.bbutton:hover {
+    color: #DD6900;
+    text-decoration:none;
+}
+
+.bbuttonrbs {
+    background-image: url("{T_IMAGESET_PATH}/button_rbs.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 6px 0px 7px 0px;
+}
+
+.bbuttonrd {
+    background-image: url("{T_IMAGESET_PATH}/button_rd.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 6px 0px 7px 0px;
+}
+
+.bbuttonru {
+    background-image: url("{T_IMAGESET_PATH}/button_ru.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 6px 0px 7px 0px;
+}
+
+.bbuttonrl {
+    background-image: url("{T_IMAGESET_PATH}/button_ru.gif");
+    background-repeat: no-repeat;
+    background-color:transparent;
+    padding: 6px 0px 7px 0px;
+}

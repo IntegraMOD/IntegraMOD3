@@ -1,0 +1,52 @@
+{YT_HEADER}
+</head>
+<body>
+<div id="wrap">
+<div class="border-left">
+<div class="border-right">
+<div class="border-top">
+<div class="border-top-left">
+<div class="border-top-right">
+<div class="inside"><a id="top" name="top" accesskey="t"></a>
+<div id="page-header"><div class="headerbar">
+<div class="inner"><span class="corners-top"><span></span></span>	
+<div id="site-description">	<a href="{U_INDEX}" title="{L_INDEX}"><img src="./styles/web/images/logo.png" width="500" height="200" alt="" /></a></div>	
+<span class="corners-bottom"><span></span></span></div>
+</div>
+<table cellpadding="0" width="100%">
+	<tr>
+		<td>
+
+						<div id="main2">
+							<object width="425" height="344">
+							<param name="movie" value="{VIDEO}&hl=en&fs=1"></param>
+							<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+							<embed src="{MY_VIDEO}" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed>
+							</object>
+						<div style="float: left; margin-top: 5px;"><strong>Categories:</strong> <!-- BEGIN video_loop_row_cats -->{video_loop_row_cats.CATS}, <!-- END video_loop_row_cats --></div>
+						</div>
+
+					    <div id="extras2">
+						<div class="mini-panel sections" style="width: 420px;">
+							<div class="inner">
+								<span class="corners-top"><span></span></span>
+								<h3><a href="web?mode=welcome">Stargate Web Pages: youtube video links</a></h3>
+									<ul class="menu">
+									<!-- BEGIN video_loop_row -->
+									<li>
+									<div style="width:100%;">
+									<div>Title: <strong><a href="web_page_utube.php?video={video_loop_row.VIDEO_LINK}">{video_loop_row.VIDEO_TITLE}</a></strong></div>
+									<div>Performed by: <strong>{video_loop_row.VIDEO_WHO}</strong></div>
+									<div>Rating: <strong>{video_loop_row.VIDEO_RATING}</strong></div>
+									<div>Category: <strong>{video_loop_row.VIDEO_CAT}</strong></div>
+									</li>
+									<!-- END video_loop_row -->
+									</ul>
+								<span class="corners-bottom"><span></span></span>
+							</div>
+						</div>
+					    </div>
+		</td>
+	</tr>
+</table>
+{YT_FOOTER}

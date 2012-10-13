@@ -1,0 +1,32 @@
+Stargate Portal
+PHP Version: 5.2.10
+DBMS: MySQL(i) 5.0.81-community
+phpBB3 Version: 3.0.6-RC2
+
+Adding acp module: Portal
+ERROR: Module already exists.
+
+Adding acp module: Main Config
+ERROR: Module already exists.
+
+Adding acp module: Blocks
+ERROR: Module already exists.
+
+Adding acp module: Menus
+ERROR: Module already exists.
+
+Adding acp module: Mini Modules 
+ERROR: Module already exists.
+
+Adding acp module: Web Pages
+ERROR: Module already exists.
+
+Adding acp module: Additional Mods and Tools
+ERROR: Module already exists.
+
+Adding acp module: Cloud
+ERROR: Module already exists.
+
+Adding acp module: SGP youtubes Mod
+ERROR: Module already exists.
+

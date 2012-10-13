@@ -1,0 +1,28 @@
+	<!-- INCLUDE portal_tail.html -->
+	<!-- IF not S_IS_BOT -->{RUN_CRON_TASK}<!-- ENDIF -->
+</div>
+
+<!--
+	We request you retain the full copyright notice below including the link to www.phpbb.com.
+	This not only gives respect to the large amount of time given freely by the developers
+	but also helps build interest, traffic and use of phpBB3. If you (honestly) cannot retain
+	the full copyright we ask you at least leave in place the "Powered by phpBB" line, with
+	"phpBB" linked to www.phpbb.com. If you refuse to include even this then support on our
+	forums may be affected.
+
+	The phpBB Group : 2006
+//-->
+
+<div id="wrapfooter">
+	<!-- IF U_ACP --><a href="{U_ACP}" title="{L_ACP}"><span class="icon_mcp"><img src="{T_THEME_PATH}/images/spacer.gif" width="26" height="18" alt="" title="" /></span><span class="icon_s">{L_ACP}</span><span class="icon_r"><img src="{T_THEME_PATH}/images/spacer.gif" width="6" height="18" alt="" title="" /></span><br /><br /><!-- ENDIF -->
+	<span class="copyright">
+    <a href="{U_TEAM}">{L_THE_TEAM}</a> &bull; <!-- IF not S_IS_BOT --><a href="{U_DELETE_COOKIES}">{L_DELETE_COOKIES}</a> &bull; <!-- ENDIF -->{S_TIMEZONE}{COPYRIGHT_INFO}
+	<!-- IF TRANSLATION_INFO --><br />{TRANSLATION_INFO}<!-- ENDIF -->
+	<!-- IF DEBUG_OUTPUT --><br /><bdo dir="ltr">[ {DEBUG_OUTPUT} ]</bdo><!-- ENDIF --></span>
+</div>
+</div>
+<!-- IF STARGATE -->
+<br /><!-- IF RAND_BANNER_POSITION == 2 or RAND_BANNER_POSITION == 3 --><div align="center">{RAND_BANNER}</div><!-- ENDIF -->
+<!-- ENDIF -->
+</body>
+</html>

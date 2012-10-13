@@ -1,0 +1,21 @@
+Subject: Welkom op "{SITENAME}"
+
+{WELCOME_MSG}
+
+Bewaar deze e-mail goed.
+Je account gegevens zijn als volgt:
+
+----------------------------
+Gebruikersnaam: {USERNAME}
+Wachtwoord:     {PASSWORD}
+
+Site URL: {U_BOARD}
+----------------------------
+
+Op dit moment is je account nog niet actief, de beheerder van het site moet hem eerst activeren voordat je kunt inloggen. Je zult nog een e-mail ontvangen als dat gebeurd is. 
+
+Vergeet je wachtwoord niet, het is gecodeerd opgeslagen in onze database en kan onmogelijk achterhaald worden. Mocht je het wachtwoord toch vergeten dan kun je altijd nog een nieuwe aanvragen dat op dezelfde manier geactiveerd moet worden als je account. 
+
+Bedankt voor je registratie.
+
+{EMAIL_SIG}

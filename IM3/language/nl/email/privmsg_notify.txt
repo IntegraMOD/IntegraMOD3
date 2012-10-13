@@ -1,0 +1,15 @@
+Subject: Er is een nieuw Prive Bericht voor je.
+
+Hallo {USERNAME},
+
+Je heb een nieuw Prive Bericht ontvangen van "{AUTHOR_NAME}" op het forum "{SITENAME}" met het volgende onderwerp:
+
+{SUBJECT}
+
+Klik op de volgende link om je berichten te bekijken:
+
+{U_INBOX}
+
+Je kunt deze e-mail meldingen eventueel uitschakelen via de instellingen in je profiel.
+
+{EMAIL_SIG}

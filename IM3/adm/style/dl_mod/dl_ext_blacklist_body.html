@@ -1,0 +1,58 @@
+<script language="Javascript" type="text/javascript">
+<!--
+function select_switch(status)
+{
+	for (i = 0; i < document.extention.length; i++)
+	{
+		document.extention.elements[i].checked = status;
+	}
+}
+// -->
+</script>
+
+<h1>{L_DL_EXT_BLACKLIST}</h1>
+
+<p>{L_DL_EXT_BLACKLIST_EXPLAIN}</p>
+
+<form action="{S_DOWNLOADS_ACTION}" method="post" name="add_ext">
+
+<fieldset>
+
+	<dl>
+		<dt><label>{L_DL_EXTENTION}</label></dt>
+		<dd><input type="text" name="extention" size="5" maxlength="10" value="" /></dd>
+	</dl>
+
+	<p class="submit-button">
+		<input type="submit" class="button1" name="submit" value="{L_DL_ADD_EXTENTION}" />
+	</p>
+
+</fieldset>
+
+<input type="hidden" name="action" value="add" />
+
+</form>
+
+<form action="{S_DOWNLOADS_ACTION}" method="post" name="extention">
+
+<fieldset>
+
+	<legend>{L_DL_EXTENTIONS}</legend>
+
+	<!-- BEGIN extention_row -->
+	<dl>
+		<dt><label>{extention_row.EXTENTION}</label></dt>
+		<dd><input type="checkbox" class="permissions-checkbox" name="extention[]" value="{extention_row.EXTENTION}" /></dd>
+	</dl>
+	<!-- END extention_row -->
+
+	<p class="submit-button">
+		<input type="submit" name="submit" class="button1" value="{L_DL_DEL_EXTENTIONS}" /><br />
+		<span><a href="javascript:select_switch(true);" class="gensmall">{L_MARK_ALL}</a> :: <a href="javascript:select_switch(false);" class="gensmall">{L_UNMARK_ALL}</a></span>
+	</p>
+
+</fieldset>
+
+<input type="hidden" name="action" value="delete" />
+
+</form>

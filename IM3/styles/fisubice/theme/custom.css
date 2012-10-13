@@ -1,0 +1,90 @@
+
+.tabs {
+	float: left;
+	margin: 5px 0;
+	width: 100%;
+}
+
+ul.tabNav {
+	background: url("{T_THEME_PATH}/images/bg_tabs3t.png") right 0 no-repeat;
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+ul.tabNav li {
+	background: url("{T_THEME_PATH}/images/bg_tabs3.png") left 0 no-repeat;
+	display: inline;
+	float: left;
+	height: 25px;
+	width: auto;
+}
+
+ul.tabNav li a {
+	background: url("{T_THEME_PATH}/images/bg_tabs3.png") center 0 no-repeat;
+	border-right: 1px solid #101010;
+	border-left: 1px solid #1F1F1F;
+	color: #CCC;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 25px;
+	outline: none;
+	padding: 0 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+ul.tabNav li a.selected, ul.tabNav li a:hover {
+	color: #70010C;
+	text-decoration: none;
+}
+
+ul.tabNav li a.first {
+	background: url("{T_THEME_PATH}/images/bg_tabs3.png") left 0 no-repeat;
+	border-left: none;
+}
+
+ul.tabNav li a:focus {
+	outline: none;
+}
+
+div.tabs > div {
+	float: left;
+	margin: 0;
+}
+
+div.tabs > div h3 {
+	margin-top: 10px;
+}
+
+.tabCAL {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
+.tabCAL p {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#insidetabCAL ul {}
+
+#insidetabCAL ul li, #tab_button {
+	padding-top: 5px;
+}
+
+#insidetabCAL {
+	background: #101010;
+	padding: 5px 5px 0 5px;
+	width: auto;
+}
+
+/*#first, #second, #third, #fourth {}*/

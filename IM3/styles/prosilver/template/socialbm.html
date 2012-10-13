@@ -1,0 +1,17 @@
+<!-- IF not S_IS_BOT -->
+<div style="float: {S_CONTENT_FLOW_END}">
+<!-- IF S_DISPLAY_DIG --><a href="http://digg.com/submit?url={SITE_URL}&amp;title={TOPIC_TITLE}" target="_blank">{DIG_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_DEL --><a href="http://del.icio.us/post?url={SITE_URL}&amp;title={TOPIC_TITLE}" target="_blank">{DEL_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_SLASHDOT --><a href="javascript:location.href='http://slashdot.org/bookmark.pl?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)"></a><a href="javascript:location.href='http://slashdot.org/bookmark.pl?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)">{SLASHDOT_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_RDS --><a href="http://myweb2.search.yahoo.com/myresults/bookmarklet?t={TOPIC_TITLE}&u={SITE_URL}" target="_blank">{RDS_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_SPURL --><a href="http://www.spurl.net/spurl.php?url={SITE_URL}&amp;title={TOPIC_TITLE}" target="_blank">{SPURL_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_LINKAGOGO --><a href="http://www.linkagogo.com/go/AddNoPopup?title={TOPIC_TITLE}&url={SITE_URL}" target="_blank">{LINKAGOGO_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_REDDIT --><a href="http://reddit.com/submit?url={SITE_URL}&amp;title={TOPIC_TITLE}" target="_blank">{REDDIT_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_TECH --><a href="http://technorati.com/faves?sub=addfavbtn&add=url={SITE_URL}&amp;title={TOPIC_TITLE}" target="_blank">{TECH_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_GOOGLE --><a href="http://www.google.com/bookmarks/mark?op=edit&bkmk={SITE_URL}&title={TOPIC_TITLE}" target="_blank">{GOOGLE_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_PROP --><a href="http://www.netscape.com/submit/?U={SITE_URL}&T={TOPIC_TITLE}" target="_blank">{PROP_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_NETV --><a href="http://www.netvouz.com/action/submitBookmark?url={SITE_URL}&title={TOPIC_TITLE}&popup=no" target="_blank">{NETV_IMG}</a>&nbsp;<!-- ENDIF -->
+<!-- IF S_DISPLAY_STUMBLE --><a href="http://www.stumbleupon.com/submit?url={SITE_URL}&title={TOPIC_TITLE}" target="_blank">{STUMBLE_IMG}</a>&nbsp;<!-- ENDIF -->
+</div>
+<br clear="all" />
+<!-- ENDIF -->

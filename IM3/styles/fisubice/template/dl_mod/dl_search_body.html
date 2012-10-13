@@ -1,0 +1,49 @@
+<!-- INCLUDE overall_header.html -->
+
+	<form action="{S_DL_SEARCH_ACTION}" method="post" >
+
+		<table class="table1" width="100%" cellpadding="4" cellspacing="1">
+		<tr>
+			<th colspan="2">{L_SEARCH_OPTIONS}</th>
+		</tr>
+		<tr>
+			<td class="row1" width="50%" align="right"><span class="gen">{L_SEARCH_KEYWORDS}</span></td>
+			<td class="row2" valign="top"><span><input type="text" class="inputbox" name="search_keywords" size="50" maxlength="255" /></span></td>
+		</tr>
+		<tr>
+			<td class="row1" width="50%" align="right"><span class="gen">{L_SEARCH_AUTHOR}</span></td>
+			<td class="row2" valign="top"><span><input type="text" class="inputbox" name="search_author" size="50" maxlength="255" /></span></td>
+		</tr>
+		</table>
+	
+		<br />
+	
+		<table class="table1" width="100%" cellpadding="4" cellspacing="1">
+			<tr>
+			<th colspan="2">{L_OPTIONS}</th>
+		</tr>
+		<tr>
+			<td class="row1" width="50%" align="right"><span class="gen">{L_CATEGORY}</span></td>
+			<td class="row2"><span>{S_DL_CATEGORY_OPTIONS}</span></td>
+		</tr>
+		<tr>
+			<td class="row1" width="50%" align="right"><span class="gen">{L_SORT_BY}</span></td>
+			<td class="row2"><span>{S_DL_SORT_OPTIONS}</span></td>
+		</tr>
+		<tr>
+			<td class="row1" width="50%" align="right"><span class="gen">{L_SORT_DIR}</span></td>
+			<td class="row2"><span>{S_DL_SORT_ORDER}</span></td>
+		</tr>
+		</table>
+
+		<table width="100%" cellspacing="10" cellpadding="0" border="0">
+		<tr>
+			<td align="right"><input type="submit" name="submit" class="btnmain" value="{L_SEARCH}" /></td>
+		</tr>
+		</table>
+
+	</form>
+
+<!-- INCLUDE dl_mod/dl_footer.html -->
+
+<!-- INCLUDE overall_footer.html -->

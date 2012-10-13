@@ -1,0 +1,37 @@
+<!-- INCLUDE overall_header.html -->
+
+<h2>{L_ARTICLE_NEW}</h2>
+<p>{L_ARTICLE_NEW_DESC}</p>
+<!-- IF PAGINATION -->
+<b>{PAGE_NUMBER} <span>{PAGINATION}</span></b>
+<!-- ENDIF -->
+<table class="tablebg" cellspacing="1" width="100%">
+	<thead>
+	<tr>
+		<th>{L_ARTICLE}</th>
+		<th width="30%">{L_CATEGORIE}</th>
+		<th width="20%">{L_MODERATE}</th>
+	</tr>
+	</thead>
+	<tbody>
+	<!-- BEGIN article_row -->
+	<tr>
+		<td class="row1"><b><a href="{article_row.U_SHOW}">{article_row.TITLE}</a></b><br />{article_row.DESCRIPTION}</td>
+		<td class="row2">{article_row.CAT}</td>
+		<td class="row1">
+			<!-- IF S_EDIT_ARTICLE --> <a href="{article_row.U_EDIT}">[{L_ARTICLE_EDIT}]</a><br /><!-- ENDIF -->
+			<a href="{article_row.U_ACTIVATE}">[{L_AKTIVATE}]</a><br />
+			<!-- IF S_DELETE_ARTICLE --> <a href="{article_row.U_DELETE}">[{L_DELETE}]</a><!-- ENDIF -->
+		</td>
+	</tr>
+	<!-- END article_row -->
+	</tbody>
+</table>
+<br />
+<table class="tablebg" cellspacing="1" width="100%">
+<tr>
+	<td align="center" class="row1" style="padding:5px 5px 5px 5px;"><b><a href="{U_KB}">{L_BACK_KB}</a></b></td>
+</tr>
+</table>
+<br />
+<!-- INCLUDE overall_footer.html -->

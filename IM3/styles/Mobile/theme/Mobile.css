@@ -1,0 +1,821 @@
+/* Layout
+ ------------ */
+*{margin: 0;padding: 0;}
+html{
+font-size: 101%;
+}
+
+body {
+/* Text-Sizing with ems: http://www.clagnut.com/blog/348/ */
+font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+background:#ECF0F6;
+color:#32475F;
+font-size: 62.5%; /* This sets the default font size to be equivalent to 10px */
+margin: 0px;
+}
+
+.logo{
+background-color: #B7C7D7;
+color: #32475F;
+width: 100%;
+margin: 0;
+padding: 2px 0;
+}
+
+#findbar{
+width: 100%;
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+.forumrules{
+font-size: 1.2em;font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+background-color: #FDFACA;
+font-weight: normal;
+}
+
+.forumrules h2{
+color: #E20202;
+}
+
+#pageheader { }
+#pagecontent { }
+#pagefooter { }
+#poll { }
+#postrow { }
+#postdata { }
+
+/*  Text
+ --------------------- */
+h1{
+font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+color: #32475F;
+font-weight: bold;
+font-size: 1.5em;
+text-decoration: none;
+}
+
+h2{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: 1.4em;
+text-decoration: none;
+line-height: 120%;
+}
+
+h3{
+font-size: 1.3em;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 120%;
+}
+
+h4{
+margin: 0;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+p{
+font-size: 1.2em;
+}
+
+p.moderators{
+margin: 0;
+text-align: center;
+color: #000000;
+font-weight: bold;
+}
+
+.rtl p.moderators{
+text-align: center;
+}
+
+p.linkmcp{
+margin: 0;
+text-align: center;
+font-size: 1.1em;
+white-space: nowrap;
+}
+
+.rtl p.linkmcp{
+text-align: center;
+}
+
+.breadcrumbs{
+background-color: #D7E1EA;
+font-size: 0.9em;
+padding: 2px;
+}
+
+p.breadcrumbs{
+margin: 0;
+background-color: #D7E1EA;
+float: left;
+color: #000000;
+font-weight: bold;
+white-space: normal;
+}
+
+.rtl p.breadcrumbs{
+text-align: center;
+}
+
+p.datetime{
+margin: 0;
+text-align: center;
+white-space: nowrap;
+font-size: 1em;
+}
+
+.rtl p.datetime{
+text-align: center;
+}
+
+p.searchbar{
+padding: 2px 0;
+white-space: nowrap;
+} 
+
+p.searchbarreg{
+margin: 0;
+float: right;
+white-space: nowrap;
+}
+
+.rtl p.searchbarreg{
+float: left;
+}
+
+p.forumdesc{
+padding-bottom: 4px;
+}
+
+p.topicauthor{
+margin: 1px 0;
+}
+
+p.topicdetails{
+margin: 1px 0;
+}
+
+.postreported{
+margin: 1px 0;
+color: red;
+font-weight:bold;
+}
+
+.postreported a:visited{
+margin: 1px 0;
+color: red;
+font-weight:bold;
+}
+
+.postreported a:hover{
+margin: 1px 0;
+color: red;
+font-weight:bold;
+}
+
+.postreported a:link{
+margin: 1px 0;
+color: red;
+font-weight:bold;
+}
+
+.postreported a:active{
+margin: 1px 0;
+color: red;
+font-weight:bold;
+}
+
+.postapprove{
+color: green;
+font-weight:bold;
+}
+
+.postapprove a:visited{
+color: green;
+font-weight:bold;
+}
+
+.postapprove a:hover{
+color: green;
+font-weight:bold;
+}
+
+.postapprove a:link{
+color: green;
+font-weight:bold;
+}
+
+.postapprove a:active{
+color: green;
+font-weight:bold;
+}
+
+.postapprove img, .postreported img{
+vertical-align: bottom;
+}
+
+.postauthor{
+color: #000000;
+font-size: 1.2em;
+}
+
+.postdetails{
+color: #000000;
+}
+
+.postbody{
+font-family: "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif;
+font-size: 1.4em;
+line-height: 1.4em;
+}
+
+.postbody li, ol, ul{
+margin: 1px 0;
+}
+
+.rtl .postbody li, .rtl ol, .rtl ul{
+margin: 0 1.5em 0 0;
+}
+
+.posthilit{
+background-color: yellow;
+}
+
+.nav{
+margin: 0;
+color: #000000;
+font-size: 1.1em;
+font-weight: bold;
+}
+
+.pagination{
+padding: 4px;color: #000000;
+font-size: 1.2em;
+font-weight: bold;
+}
+
+.cattitle{ }
+.gen{
+margin: 1px 1px;
+f
+ont-size: 1.3em;
+}
+.genmed{
+margin: 1px 1px;
+font-size: 1.2em;
+}
+
+.gensmall{
+margin: 1px 1px;
+font-size: 1.0em;
+}
+
+.copyright{
+font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+color: #486386;
+font-size: 0.8em;
+font-weight: bold;
+}
+
+.titles{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.1em;
+text-decoration: none;
+}
+
+.error{
+color: red;
+}
+
+/* Tables */
+
+th{
+color: #486386;
+background-color: #B7C7D7;
+margin: 0;
+width: 100%;
+height: 20px;
+font-size: 1.2em;
+font-weight: bold;
+text-align: left;
+padding: 0 0 0 4px;
+}
+
+table{
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+tr{
+padding: 0;
+}
+
+td{
+padding: 4px 0px;
+}
+
+td.profile{
+padding: 6px;
+}
+
+.tablebg{
+background-color: #407381;
+}
+
+.cat{
+padding: 2px;
+background-color: #B0B8BB;
+}
+
+.bo {
+width: 99%;
+margin-bottom: 4px;
+padding: 0px;
+background-color: #F7F8FC;
+border: 1px solid #486386;
+margin-left: auto;
+margin-right: auto;
+}
+
+.row1 {
+background-color: #F9F9F9;
+padding: 4px;
+font-size: 1.1em;
+}
+
+.row2 {
+background-color: #D7E1EA;
+padding: 4px;
+font-size: 1.1em;
+}
+
+.row3 {
+background-color: #B7C7D7;
+padding: 4px;
+font-size: 1.1em;
+}
+
+.row4 {
+background-color: #C0C8D0;
+padding: 4px;
+font-size: 1.1em;
+}
+ 
+.row5 {
+background-color: #B7C7D7;
+padding: 4px;
+font-size: 1.1em;
+text-align: center;
+font-weight: bold;
+}
+
+.spacer{
+padding: 2px;
+margin: 0;
+}
+
+hr{
+width: 100%;
+height: 1px;
+border-width: 0;
+background-color: #486386;
+margin: 0;
+padding: 0;
+}
+
+.legend{
+text-align:center;
+margin: 0 auto;
+}
+
+/* Links */
+ 
+/* Links adjustment to correctly display an order of rtl/ltr mixed content */
+.rtl a {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+a:link{
+color: #32475F;
+margin: 1px;
+text-decoration: none;
+}
+
+a:active{
+color: #32475F;
+margin: 1px;
+text-decoration: none;
+}
+
+a:visited{
+color: #32475F;
+margin: 1px;
+text-decoration: none;
+}
+
+a:hover{
+color: #32475F;
+margin: 1px;
+text-decoration: underline;
+}
+
+a.nav{
+color: #32475F;
+font-weight: bold;
+margin: 1px;
+text-decoration: none;
+}
+
+a.nav:hover{
+margin: 1px;
+color: #32475F;
+font-weight: bold;
+text-decoration: underline;
+}
+
+a.new{
+color: #0044AA;
+font-weight: bold;
+margin: 1px;
+text-decoration: none;
+}
+
+a.forumlink{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+color: #32475F;
+font-weight: bold;
+font-size: 1.2em;
+width: 100%;
+}
+
+a.forumlink_new{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+color: #012B52;
+background-color: #FFFFFF;
+padding: 0 2px;
+margin: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #888888;
+width: 100%;
+}
+
+a.forumlink_new:hover{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+background-color: #FFFFFF;
+padding: 0 2px;
+margin: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #888888;
+width: 100%;
+}
+
+a.topictitle{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+color: #32475F;
+margin: 1px;
+}
+
+a.topictitle:hover{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+margin: 1px auto;
+}
+
+a.topictitle:visited{
+color: #32475F;
+}
+
+a.topictitle_new{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+color: #012B52;
+background-color: #FFFFFF;
+padding: 0 2px;
+margin: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #888888;
+}
+
+a.topictitle_new:hover{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+background-color: #FFFFFF;
+padding: 0 2px;
+margin: 1px;
+border-width: 1px;
+border-style: solid;
+border-color: #888888;
+}
+
+a.copyright{
+font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+font-weight: bold;
+font-size: 1.2em;
+color: #32475F;
+margin: 1px;
+}
+
+a.copyright:hover{
+text-decoration: underline;
+}
+
+th a,th a:visited{
+color: #32475F;
+}
+
+th a:hover{ }
+a.newpm{
+color: #AA0000;
+}
+
+a.unreadpm{
+color: #883300;
+}
+
+a.nowrap{
+white-space: nowrap;
+}
+
+/* Form Elements
+ ------------ */
+form{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+input{
+font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;font-size: 1.2em;
+font-weight: normal;
+color: #333333;
+padding: 1px;
+border: 1px solid #173A52;
+background-color: #FAFAFA;
+}
+
+textarea{
+font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+font-size: 1.1em; 
+background-color: #FAFAFA;
+color: #333333;
+line-height: 1.2em;
+font-weight: normal;
+border: 1px solid #173A52;
+padding: 2px;
+}
+
+select{
+font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+font-size: 1.1em;
+font-weight: normal;
+color: #333333;
+background-color: #FAFAFA;
+border: 1px solid #173A52;
+padding: 1px;
+}
+
+option{
+padding: 0 1em 0 0;
+}
+
+option.disabled-option{
+color: graytext;
+}
+
+.rtl option{
+padding: 0 0 0 1em;
+}
+
+input.radio{
+border: none;
+background-color: transparent;
+}
+
+.post{
+background-color: #FFFFFF;
+border-style: solid;
+border-width: 1px;
+font-size: 1.0em;
+font-weight: bold;
+}
+
+.btnbbcode{
+font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+font-size: 1.2em;
+font-weight: normal;
+color: #000000;
+background-color: #EFEFEF;
+border: 1px solid #173A52;
+}
+
+.btnmain{
+font-weight: bold;
+background-color: #ECECEC;
+border: 1px solid #173A52;
+cursor: pointer;
+padding: 1px 5px;
+font-size: 1.0em;
+}
+
+.btnlite{
+font-weight: normal;
+background-color: #ECECEC;
+border: 1px solid #173A52;
+cursor: pointer;
+padding: 1px 5px;
+font-size: 1.0em;
+}
+
+.btnfile{
+font-weight: normal;
+background-color: #ECECEC;
+border: 1px solid #173A52;
+padding: 1px 5px;
+font-size: 1.0em;
+}
+
+.button1{
+font-weight: bold;
+background-color: #ECECEC;
+border: 1px solid #173A52;
+cursor: pointer;
+padding: 1px 5px;
+font-size: 0.9em;
+}
+
+.helpline{
+border-style: none;
+}
+
+/* BBCode
+ ------------ */
+.quotetitle{
+font-size: 0.9em;
+font-weight: bold;
+margin: 10px 5px 0 5px;
+padding: 4px;
+border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: #8A99A2;
+color: #333333;
+background-color: #A9B8C2;
+}
+
+.attachtitle{
+font-size: 0.9em;
+font-weight: bold;
+margin: 10px 5px 0 5px;
+padding: 4px;
+border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: #8A99A2;
+color: #333333;
+background-color: #A9B8C2;
+}
+
+.quotecontent{
+font-family: "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-size: 0.9em;
+margin: 0 5px 10px 5px;
+padding: 5px;
+border-color: #7D95A4;
+border-width: 0 1px 1px 1px;
+border-style: solid;
+line-height: 1.0em;
+background-color: #FAFAFA;
+color: #4B5C77;
+}
+
+.attachcontent{
+font-family: "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-size: 0.9em;
+margin: 0 5px 10px 5px;
+padding: 5px;
+border-color: #7D95A4;
+border-width: 0 1px 1px 1px;
+border-style: solid;
+line-height: 1.0em;
+background-color: #FAFAFA;
+color: #4B5C77;
+}
+
+.attachcontent{
+font-size: 0.9em;
+}
+
+.codetitle{
+font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+font-size: 0.8em;
+margin: 10px 5px 0 5px;
+padding: 2px 4px;
+border-width: 1px 1px 1px 1px;
+border-style: solid;
+border-color: #8A99A2;
+color: #333333;
+background-color: #A9B8C2;
+}
+
+.codecontent{
+font-family: Monaco, 'Courier New', monospace;
+font-size: 0.9em;
+font-weight: normal;
+direction: ltr;
+margin: 0 5px 10px 5px;
+padding: 5px;
+border-color: #7D95A4;
+border-width: 0 1px 1px 1px;
+border-style: solid;
+color: #006600;
+background-color: #FAFAFA;
+}
+
+.syntaxbg{
+color: #FFFFFF;
+}
+
+.syntaxcomment{
+color: #FF8000;
+}
+
+.syntaxdefault{
+color: #0000BB;
+}
+
+.syntaxhtml{
+color: #000000;
+}
+
+.syntaxkeyword{
+color: #007700;
+}
+
+.syntaxstring{
+color: #DD0000;
+}
+
+/* Private messages */
+
+.pm_marked_colour{
+background-color: #000000;
+}
+
+.pm_replied_colour{
+background-color: #A9B8C2;
+}
+
+.pm_friend_colour{
+background-color: #007700;
+}
+
+.pm_foe_colour{
+background-color: #DD0000;
+}
+
+/* Misc */
+ 
+img{
+border: none;
+}
+
+.sep{
+color: black;background-color: #FFA34F;
+}
+
+table.colortable td{
+padding: 0;
+}
+
+pre{
+font-family: Monaco, 'Courier New', monospace;
+font-size: 1.2em;
+}
+
+.nowrap{
+white-space: nowrap;
+}
+
+.username-coloured{
+font-weight: bold;
+}

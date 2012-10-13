@@ -1,0 +1,39 @@
+<!-- INCLUDE overall_header.html -->
+<a name="maincontent"></a>
+
+<form id="acp_imod_vars" method="post" action="{U_ACTION}">
+
+<!-- IF S_OPT  == "Configure" -->
+<h1>{L_VARS_FOUND}: {S_SWITCH}</h1>
+<p>{L_TITLE_EXPLAIN_BLOCK}</p>
+
+
+
+<div style="display:<!-- IF S_SWITCH == 'DEFAULT_CONFIG' -->inline<!-- ELSE -->none<!-- ENDIF -->">
+<fieldset>
+	<legend>{L_BLOCKS_GLOBAL}</legend>
+	<dl>
+		<dt><label for="display_blocks_global">{L_DISPLAY_BLOCKS_GLOBAL}:</label><br /><span>{L_DISPLAY_BLOCKS_GLOBAL_EXPLAIN}</span></dt>
+		<dd>
+			<label><input type="radio" class="radio" id="display_blocks_global" name="display_blocks_global" value="1" <!-- IF S_DISPLAY_BLOCKS_GLOBAL --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+			<label><input type="radio" class="radio" name="display_blocks_global" value="0" <!-- IF not S_DISPLAY_BLOCKS_GLOBAL --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+		</dd>
+	</dl>
+</fieldset>
+</div>
+
+{L_NO_VARS_FOUND}
+<!-- ENDIF -->
+
+<!-- IF MESSAGE -->
+<dl><legend><br /><b>{MESSAGE}</b><br /></legend></dl>
+<dl><br /></dl>
+<!-- ELSE -->
+<fieldset class="submit-buttons">
+	<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+	<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+</fieldset>
+<!-- ENDIF -->
+{S_FORM_TOKEN}
+</form>
+<!-- INCLUDE overall_footer.html -->

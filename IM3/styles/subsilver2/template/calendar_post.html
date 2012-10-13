@@ -1,0 +1,246 @@
+<!-- INCLUDE overall_header.html -->
+
+<!-- INCLUDE blocks/blocks_header_left.html -->{L_CALENDAR_ADD_EVENT}<!-- INCLUDE blocks/blocks_header_right.html --> 
+<ul class="block_data_calc">
+<li>
+
+<script src="./styles/js/calendar.js"></script>
+<form action="{S_POST_ACTION}" method="post" name="postform"{S_FORM_ENCTYPE}>
+
+<fieldset class="fields1">
+<div class="panel">
+
+<!-- IF ERROR -->
+	<div class="panel bg2">
+		<dd class="row2" colspan="2" align="center"><span class="genmed error">{ERROR}</span></dd>
+	</div>
+<!-- ENDIF -->
+
+<!-- IF S_EDIT -->
+	<dl>
+		<dt><label for="delete">{L_CALENDAR_DELETE_EVENT}:</label></dt>
+		<dd><label for="delete"><input type="checkbox" class="radio" value="1" name="delete" /> <span class="gensmall">[ {L_CALENDAR_DELETE_WARN} ]</span></dd>
+	</dl>
+<!-- ENDIF -->
+
+<dl>
+	<dt><label for="name">{L_CALENDAR_EVENT_NAME}:</label></dt>
+	<dd><input type="text" name="name" id="name" class="inputbox autowidth" size="45" maxlength="64" tabindex="2" value="{SUBJECT}" /></label></dd>
+</dl>
+
+<dl>
+	<dt><label for="date">{L_CALENDAR_EVENT_START_INFO}:</label></dt>
+	<dd>
+		<label for="date"><input class="post" type="text" name="date" id="date" size="10" maxlength="10" tabindex="3" value="{DATE_IN}" readonly="readonly" onfocus="date_show(this);" onclick="event.cancelBubble=true;date_show(this);"/> 
+		<label for="time"><input class="post" type="text" name="time" id="time" size="10" maxlength="10" tabindex="4" value="{TIME_IN}" readonly="readonly" onfocus="time_show(this);" onclick="event.cancelBubble=true;time_show(this);"/>
+	</dd>
+</dl>
+<dl style="padding:0px; margin:none;">
+	<dt><label for="groupname">{L_GROUPS}:<label></dt>
+	<span style="float:left;">{L_GROUP_SELECT_EXPLAIN}</span>
+	<dd>
+		<select name="group[]" class="input" size="{NUM_GROUPS}" multiple="multiple" style="overflow:hidden;" >
+			<option value="-1">Personal</option>
+			<option value="0">Public</option>
+      	<!-- BEGIN group_row -->
+         	<option value="{group_row.GROUP_ID}" {group_row.GROUP_SELECT}>{group_row.GROUP_NAME}</option>
+      	<!-- END group_row -->
+      	</select>
+	</dd>
+</dl>
+
+	<div id="smiley-box">
+		<!-- IF S_SMILIES_ALLOWED and .smiley -->
+			<strong>{L_SMILIES}</strong><br />
+			<!-- BEGIN smiley -->
+				<a href="#" onclick="insert_text('{smiley.A_SMILEY_CODE}', true); return false;"><img src="{smiley.SMILEY_IMG}" width="{smiley.SMILEY_WIDTH}" height="{smiley.SMILEY_HEIGHT}" alt="{smiley.SMILEY_CODE}" title="{smiley.SMILEY_DESC}" /></a>
+			<!-- END smiley -->
+		<!-- ENDIF -->
+		<!-- IF S_SHOW_SMILEY_LINK and S_SMILIES_ALLOWED-->
+			<br /><a href="{U_MORE_SMILIES}" onclick="window.open('{U_MORE_SMILIES}', '_phpbbsmilies', 'HEIGHT=350,resizable=yes,scrollbars=yes,WIDTH=300'); return false;">{L_MORE_SMILIES}</a>
+		<!-- ENDIF -->
+
+		<!-- IF BBCODE_STATUS -->
+		<!-- IF .smiley --><hr /><!-- ENDIF -->
+		{BBCODE_STATUS}<br />
+		<!-- IF S_BBCODE_ALLOWED -->
+			{IMG_STATUS}<br />
+			{FLASH_STATUS}<br />
+			{URL_STATUS}<br />
+			{SMILIES_STATUS}
+		<!-- ENDIF -->
+		<!-- ENDIF -->
+		<!-- IF S_EDIT_DRAFT || S_DISPLAY_REVIEW -->
+			<!-- IF S_DISPLAY_REVIEW --><hr /><!-- ENDIF -->
+			<!-- IF S_EDIT_DRAFT --><strong><a href="{S_UCP_ACTION}">{L_BACK_TO_DRAFTS}</a></strong><!-- ENDIF -->
+			<!-- IF S_DISPLAY_REVIEW --><strong><a href="#review">{L_TOPIC_REVIEW}</a></strong><!-- ENDIF -->
+		<!-- ENDIF -->
+	</div>
+	<dt><label>{L_CALENDAR_EVENT_DESC}:</label></dt>
+
+	<script type="text/javascript">
+		<!--
+		var form_name = 'postform';
+		var text_name = 'message';
+		//-->
+	</script>
+	<!-- INCLUDE posting_buttons.html -->
+	<div id="message-box">
+		<textarea name="message" rows="10" cols="70" tabindex="5" onselect="storeCaret(this);" onclick="storeCaret(this);" onkeyup="storeCaret(this);" style="width: 98%;">{MESSAGE}</textarea>
+	</div>
+		{L_CALENDAR_EVENT_DESC_EXP}
+</div>
+</fieldset>
+
+
+	<!-- IF not S_SHOW_DRAFTS and not $SIG_EDIT eq 1 -->
+	<div class="panel bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+		<fieldset class="submit-buttons">
+		{S_HIDDEN_FIELDS}
+		<!-- IF S_EDIT -->
+			&nbsp; 
+			<input class="button2" type="submit" accesskey="s" tabindex="11" name="edit" value="{L_SUBMIT}" />
+			<input type="hidden" name="mode" value="edit">
+		<!-- ELSE -->
+			&nbsp; 
+			<input class="button2" type="submit" accesskey="s" tabindex="11" name="post" value="{L_SUBMIT}" />
+			<input type="hidden" name="mode" value="new">
+		<!-- ENDIF -->
+			&nbsp; 
+			<input class="button2" type="submit" accesskey="c" tabindex="14" name="cancel" value="{L_CANCEL}" />
+
+		</fieldset>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+	<!-- ENDIF -->
+
+</form>
+
+
+<div id="time_java" onmouseout="" onmouseover="" style="display: none; position:fixed; 10px 10px;">
+<table style="border-collapse:collapse;background:#FFFFFF;border:1px solid #ABABAB;" cellpadding="2">
+	<tr>
+		<td>
+			<select id="hrs" class="select" onchange="setH(this);" name="hrs">
+			<option value="01">01</option>
+			<option value="02">02</option>
+			<option value="03">03</option>
+			<option value="04">04</option>
+			<option value="05">05</option>
+			<option value="06">06</option>
+			<option value="07">07</option>
+			<option value="08">08</option>
+			<option value="09">09</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			</select>
+		</td>
+		<td>
+			<select id="mins" class="select" onchange="setM(this);" name="mins">
+			<option value="00">00</option>
+			<option value="05">05</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="35">35</option>
+			<option value="40">40</option>
+			<option value="45">45</option>
+			<option value="50">50</option>
+			<option value="55">55</option>
+			</select>
+		</td>
+		<td>
+			<select id="ampm" class="select" onchange="setAP(this);" name="ampm">
+			<option value="AM">AM</option>
+			<option value="PM">PM</option>
+			</select>
+		</td>
+		<td onclick="time_close();">x</td>
+	</tr>
+</table>
+</div>
+
+<div id="date_java" style="display: none; position:fixed; 10px 10px;">
+<table id="calender" style="border-collapse:collapse;background:#FFFFFF;border:1px solid #ABABAB;" cellpadding="2">
+	<tr>
+		<td style="cursor:pointer;" onclick="prev_month();"><img src="images/arrowleftmonth.gif"></td>
+		<td colspan="5" id="month_name" align="center" style="font:bold 13px Arial;"></td>
+		<td align="right" style="cursor:pointer;" onclick="next_month();"><img src="images/arrowrightmonth.gif"></td>
+	</tr>
+	<tr>
+		<td align=center style="background:#ABABAB;font:12px Arial">S</td>
+		<td align=center style="background:#ABABAB;font:12px Arial">M</td>
+		<td align=center style="background:#ABABAB;font:12px Arial">T</td>
+		<td align=center style="background:#ABABAB;font:12px Arial">W</td>
+		<td align=center style="background:#ABABAB;font:12px Arial">T</td>
+		<td align=center style="background:#ABABAB;font:12px Arial">F</td>
+		<td align=center style="background:#ABABAB;font:12px Arial">S</td>
+	</tr>
+	<tr>
+		<td id="d1" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d2" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d3" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d4" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d5" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d6" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d7" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="d8" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d9" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d10" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d11" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d12" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d13" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d14" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+	</tr>
+	<tr>		
+		<td id="d15" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d16" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d17" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d18" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d19" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d20" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d21" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="d22" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d23" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d24" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d25" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d26" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d27" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d28" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="d29" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d30" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d31" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d32" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d33" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d34" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d35" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td id="d36" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d37" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d38" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d39" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d40" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d41" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+		<td id="d42" style="border: 1px;width: 18px; height: 18px;">&nbsp;</td>
+	</tr>	
+</table>
+</div>
+
+
+   </li>
+</ul>
+<!-- INCLUDE blocks/blocks_footer.html -->
+
+<!-- INCLUDE overall_footer.html -->

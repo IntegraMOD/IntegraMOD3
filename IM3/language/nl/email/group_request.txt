@@ -1,0 +1,10 @@
+Subject: Een verzoek om lid te worden van de groep is gedaan
+
+Beste {USERNAME},
+
+Een gebruiker heeft verzocht om lid te worden van de groep "{GROUP_NAME}" die jij modereert op {SITENAME}.
+Om dit verzoek tot lidmaatschap van de groep te accepteren of te weigeren kun je op de volgende link klikken:
+
+{U_PENDING}
+
+{EMAIL_SIG}

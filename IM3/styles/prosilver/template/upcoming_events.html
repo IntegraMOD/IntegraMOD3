@@ -1,0 +1,37 @@
+<div class="block_bg" id="bday-panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+		<span class="block_header">
+			<span class="handle">
+				{L_UPCOMING_EVENTS} & {L_UPCOMING_BIRTHDAYS}</a>
+			</span>
+		</span>
+		<div class="box" style="text-align:left; padding:0;">
+			<div style="overflow:hide;" >
+				<div style="padding:10px;padding-top:15px;">
+				<!-- IF S_SHOW_UPCOMING_EVENTS -->
+					<h3 style="margin-top:0px;">{L_UPCOMING_EVENTS}{L_EVENTS_TIMEFRAME}</h3>
+					<p>
+					<!-- IF S_IS_EVENTS -->
+						<!-- BEGIN event_list -->{event_list.TITLE} ({L_ON} {event_list.DATE} {L_AT} {event_list.TIME})<!-- IF not event_list.S_LAST_ROW -->, <!-- ENDIF --><!-- END event_list -->
+					<!-- ELSE -->
+						{L_NO_UPCOMING_EVENTS}
+					<!-- ENDIF -->
+					</p>
+					<br />
+				<!-- ENDIF -->
+				<!-- IF S_SHOW_UPCOMING_BIRTHDAYS -->
+					<h3 style="margin-top:0px;">{L_UPCOMING_BIRTHDAYS}{L_BIRTHDAYS_TIMEFRAME}</h3>
+					<p>
+					<!-- IF S_IS_BIRTHDAYS -->
+						{L_CONGRATULATIONS}: <!-- BEGIN bday_list -->{bday_list.USERNAME_FULL} ({bday_list.AGE} {L_ON} {bday_list.ON_DAY})<!-- IF not bday_list.S_LAST_ROW -->, <!-- ENDIF --><!-- END bday_list -->
+					<!-- ELSE -->
+						{L_NO_UPCOMING_BIRTHDAYS}
+					<!-- ENDIF -->
+					<br />
+					</p>
+				<!-- ENDIF -->
+				</div>
+			</div>
+		</div>
+	<span class="corners-bottom"><span></span></span></div>
+</div>

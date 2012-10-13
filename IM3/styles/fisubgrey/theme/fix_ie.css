@@ -1,0 +1,168 @@
+/*
+	iefixes.css
+
+	This file is required to fix IE bugs... 
+	Michaelo phpbbireland.com 02 April 2008
+*/
+
+/* highslide 02 April 2008 */
+.highslide img	{ max-width:350px; }
+
+/* in search 10 February 2008 */
+input.full	{ width: 99%; }
+
+/* block part fix 26 April 2008 */
+
+
+span.corners-top-news {
+	background-image: url("./images/corners_left_news.gif");
+}
+
+span.corners-top-news span {
+	background-image: url("./images/corners_right_news.gif");
+}
+
+span.corners-bottom-news {
+	background-image: url("./images/corners_left_news.gif");
+}
+
+span.corners-bottom-news span {
+	background-image: url("./images/corners_right_news.gif");
+}
+
+.showhide {
+	float: right; margin-top: -14px; margin-right: 9px;
+}
+
+/* Menu icons not sizing correctly IE bug*/
+div.sdmenu span {
+   padding:1px;
+}
+
+.icon_r {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_s {
+    padding: 4px 0px 5px 0px;
+}
+
+.icon_profile {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_aim {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_email {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_icq {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_jabber {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_msnm {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_pm {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_www {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_yim {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_mcp {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_edit {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_fwd {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_print {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_quote {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_reply {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_offline {
+     padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_online {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.icon_search {
+    padding: 1px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.bbuttonl {
+    padding: 0px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.bbutton {
+    padding: 5px 0px 6px 0px;
+}
+
+.bbuttonrbs {
+    padding: 0px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.bbuttonrd {
+    padding: 0px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.bbuttonru {
+    padding: 0px 0px 0px 0px;
+    vertical-align:middle;
+}
+
+.bbuttonrl {
+    padding: 0px 0px 0px 0px;
+    vertical-align:middle;
+}

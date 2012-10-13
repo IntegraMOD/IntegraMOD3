@@ -1,0 +1,134 @@
+/*      
+--------------------------------------------------------------
+Style sheet for calendar mod
+-------------------------------------------------------------- */
+
+.cal_today {
+	background-color:#FFBBAA;
+	font-weight: bold;
+}
+.cal_birthday {
+	color:#FF8000;
+	font-weight: bold;
+}
+.cal_event {
+	color:#FF0000;
+	font-weight: bold;
+}
+
+table.calendar {
+	border:solid 1px;
+	border-color:#E1E9F2;
+}
+
+td.calendar {
+    border:solid 1px;
+    border-color:#E1E9F2;
+}
+
+tr.calendar {
+	/*
+	background-image: url("./images/bg_list.gif");
+	color:#EFFFFF;
+	*/
+    background-color:#F9F9F9;
+	color:#0D97DC;
+	background-repeat: repeat-x;
+	height: 22px;
+	border:none;
+}
+
+tr.cal_block_header {
+    background-color:#E1E9F2;
+    height:16px;
+    border-color:#E1E9F2;
+    font-weight:bold;
+}
+
+/* Emoticons panel */
+#smiley-box {
+	width: 18%;
+	float: right;
+}
+
+#smiley-box img {
+	margin: 3px;
+}
+
+#message-box textarea {
+	color: #333333;
+}
+#message-box {
+	width: 80%;
+}
+#message-box textarea {
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	width: 100%;
+	font-size: 1.2em;
+	color: #333333;
+}
+.rtl fieldset.quick-login input.inputbox {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+input.inputbox {
+	background-color: #F2F3F3;
+}
+
+.inputbox {
+	background-color: #FFFFFF; 
+	border-color: #B4BAC0;
+	color: #333333;
+}
+
+.inputbox:hover {
+	border-color: #11A3EA;
+}
+
+.inputbox:focus {
+	border-color: #11A3EA;
+	color: #0F4987;
+}
+
+fieldset.quick-login input.inputbox {
+	width: 15%;
+	vertical-align: middle;
+	margin-right: 5px;
+	background-color: #f3f3f3;
+}
+
+.inputbox {
+	background-color: #FFFFFF;
+	border: 1px solid #c0c0c0;
+	color: #333333;
+	padding: 2px;
+	cursor: text;
+}
+
+.inputbox:hover {
+	border: 1px solid #eaeaea;
+}
+
+.inputbox:focus {
+	border: 1px solid #eaeaea;
+	color: #4b4b4b;
+}
+
+textarea.inputbox {
+	width: 85%;
+}
+
+.autowidth {
+	width: auto !important;
+}
+
+.invitemain input[type=text] {
+  	font-size: 20px;
+  	width: 200px;
+}
+
+.invite {
+ 	margin: 20px 0px 0px 0px;
+  	display: none;
+ }

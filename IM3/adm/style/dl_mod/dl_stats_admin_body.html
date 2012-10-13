@@ -1,0 +1,110 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+	function select_switch(status)
+	{
+		for (i = 0; i < document.dl_stats.length-12; i++)
+		{
+			document.dl_stats.elements[i].checked = status;
+		}
+	}
+//-->
+</script>
+
+<h1>{L_DL_STATS}</h1>
+
+<br />
+
+<!-- IF S_FILLED_FOOTER -->
+<form action="{S_FORM_ACTION}" method="post" name="dl_stats">
+
+	<table width="100%" cellpadding="0" cellspacing="1" border="0">
+	<thead>
+	<tr>
+	  <th>{L_USERNAME}</th>
+	  <th>{L_DL_FILE_NAME}<br />{L_CAT_NAME}</th>
+	  <th>{L_TRAFFIC}</th>
+	  <th>{L_TIME_STAMP}<br />{L_DL_DIRECTION}</th>
+	  <th>{L_BROWSER}<br />{L_USER_IP}</th>
+	  <th>&nbsp;</th>
+	</tr>
+	</thead>
+	<tbody>
+	<!-- BEGIN dl_stat_row -->
+	<tr>
+	  <td><span>{dl_stat_row.USERNAME}</span></td>
+	  <td><b><a href="{dl_stat_row.U_DL_LINK}">{dl_stat_row.DESCRIPTION}</a></b><br /><a href="{dl_stat_row.U_CAT_LINK}">{dl_stat_row.CAT_NAME}</a></td>
+	  <td><span>{dl_stat_row.TRAFFIC}</span></td>
+	  <td><span>{dl_stat_row.TIME_STAMP}<br />{dl_stat_row.DIRECTION}</span></td>
+	  <td><span>{dl_stat_row.BROWSER}<br />{dl_stat_row.USER_IP}</span></td>
+	  <td><input type="checkbox" class="permissions-checkbox" name="del_id[]" value="{dl_stat_row.ID}" /></td>
+	</tr>
+	<!-- END dl_stat_row -->
+	</tbody>
+	</table>
+
+	<p align="right">
+		<a href="javascript:select_switch(true);" class="gensmall">{L_MARK_ALL}</a> ::
+		<a href="javascript:select_switch(false);" class="gensmall">{L_UNMARK_ALL}</a>
+		<br /><br /><span>{PAGINATION}</span>
+	</p>
+
+<fieldset>
+
+	<legend>{L_DELETE}</legend>
+
+	<dl>
+		<dt><label>{L_GUESTS_DELETE}</label></dt>
+		<dd><input type="checkbox" class="permissions-checkbox" name="del_id" value="-1" /></dd>
+	</dl>
+
+	<p class="submit-button" align="right">	
+		<input type="submit" name="delete" value="{L_DELETE}" class="button2" />
+	</p>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>{L_SORT}</legend>
+
+	<dl>
+		<dt><label>{L_SORT_BY}</label></dt>
+		<dd>{S_SORT_ORDER}&nbsp;{S_SORT_DIR}</dd>
+	</dl>
+
+	<p class="submit-button" align="right">
+		<input type="submit" name="submit" value="{L_SORT}" class="button2" />
+	</p>
+
+</fieldset>
+
+<fieldset>
+
+	<legend>{L_FILTER}</legend>
+
+	<dl>
+		<dt><label>{S_FILTER}</label></dt>
+		<dd><input type="text" name="filter_string" value="{FILTER_STRING}" size="30" maxlength="50" /><br /><span>({L_FILTER_STRING})</span><dd>
+	</dl>
+	<dl>
+		<dt><label>{L_SHOW_GUESTS}</label></dt>
+		<dd><input type="checkbox" class="permissions-checkbox" name="show_guests" value="1" {S_SHOW_GUESTS} /></dd>
+	</dl>
+
+	<p class="submit-button2" align="right">
+		<input type="submit" name="submit" value="{L_FILTER}" class="button2" />
+	</p>
+
+</fieldset>
+
+</form>
+
+<!-- ELSE -->
+
+<br />
+
+<p>
+  	<span>{L_NO_STAT}</span>
+</p>
+
+<!-- ENDIF -->
